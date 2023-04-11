@@ -1,0 +1,180 @@
+*
+{
+	box-sizing: border-box;
+	text-decoration: none;
+	color: inherit;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	width: 1000px;
+	margin: auto;
+}
+
+.navbar {
+	font-family: helvetica;
+    height: 90px;
+	background: black;
+	background-size: 950px;
+}
+
+.navbar .logo{
+	width: 20%;
+	float: left;
+	margin-top: 22px;
+}
+
+.navbar .logo img {
+	width: 85px;
+	cursor: pointer;
+}
+
+.navbar .links {
+	width: 50%;
+	float: left;
+	list-style: none;
+}
+
+.navbar .links li{
+	float: left;
+	padding: 7px;
+	margin-left: 20px;
+	font-weight: 600px;
+	color: #f4f1f1;
+	cursor: pointer;
+	transition: 0.5s;
+}
+
+.navbar .links li:hover {
+	color: hs1(252deg 97% 66%);
+}
+
+.navbar .search {
+	width: 5%;
+	float: left;
+	margin-top: 22px;
+	margin-left: 110px;
+	color: #f3eeee;
+	cursor: pointer;
+}
+
+.navbar .search span {
+	text-align:right;
+}
+
+.navbar .icon {
+	float: right;
+	margin-top: 22px;
+	color: #efeaea;
+	font-size: 24px;
+	cursor: pointer;
+}
+
+
+.header4 {
+  background-color: darkred;
+  padding: 30px;
+  text-align: center;
+  font-size: 25px;
+  color: rgb(245, 239, 239);
+  text-align: justify;
+}
+
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: #080808;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.mission
+{
+    font-size: 30px;
+    text-align: center;
+    padding-bottom: 10px;
+    background-color:darkred;
+}
+
+article {
+  float: left;
+  padding: 5px;
+  width: 70%;
+  background-color: #060606;
+  height: 300px; /* only for demonstration, should be removed */
+ color: #f8f4f4;
+ text-align: justify;
+ font-size: 30px;
+}
+
+.header5 
+{
+    text-align: center;
+    font-size: 25px;
+    color: aqua;
+}
+
+.sentence
+{
+    font-size: 20px;
+    margin-top: 50px;
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+
+h3{
+    text-align: center;
+    font-size: 30px;
+    text-align: justify;
+    font-family: Bold;
+}
+
+h5{
+    text-align: center;
+    font-size: 50px;
+    background-color: antiquewhite;
+}
+.header7 {
+    background-color: #363636;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+  }
+
+.nav1{
+  color: #efeaea;
+}

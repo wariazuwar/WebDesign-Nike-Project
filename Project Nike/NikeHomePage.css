@@ -1,0 +1,179 @@
+*
+{
+	box-sizing: border-box;
+	font-family: helvetica;
+	text-decoration: none;
+	color: inherit;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.container{
+	width: 1000px;
+	margin: auto;
+}
+
+.navbar {
+	height: 0;
+	font-family: helvetica;
+}
+
+.navbar .logo{
+	width: 20%;
+	float: left;
+	margin-top: 22px;
+}
+
+.navbar .logo img {
+	width: 85px;
+	cursor: pointer;
+}
+
+.navbar .links {
+	width: 50%;
+	float: left;
+	list-style: none;
+}
+
+.navbar .links li{
+	float: left;
+	padding: 7px;
+	margin-left: 20px;
+	font-weight: 600px;
+	color: #fff;
+	cursor: pointer;
+	transition: 0.5s;
+}
+
+.navbar .links li:hover {
+	color: hs1(252deg 97% 66%);
+}
+
+.navbar .search {
+	width: 18%;
+	float: left;
+	margin-top: 22px;
+	margin-left: 110px;
+	color: #ffffff;
+	cursor: pointer;
+}
+
+.navbar .search span {
+	text-align:right;
+
+}
+
+.navbar .icon {
+	float: right;
+	margin-top: 22px;
+	color: #fff;
+	font-size: 24px;
+	cursor: pointer;
+}
+
+/* header */
+.header {
+	height: 500px;
+	background: url(backgroundblack2.jpg);
+	background-size: 950px;
+	padding: 90px 0;
+}
+
+.header .text{
+	width: 50%;
+	float: left;
+	margin-top: 100px;
+	font-family: sans-serif;
+}
+
+.header .text h2{
+	font-size: 50px;
+	color: #FFF;
+	width: 70%;
+	margin-top: 1px;
+	
+}
+
+.header .text span:first-of-type{
+	display: inline-block;
+	padding: 8px 15px;
+	border-radius: 17px;
+	margin-right: 25px;
+	cursor: pointer;
+	color: #ffffff;
+}
+
+.header .text span:last-of-type{
+	color: #ffffff;
+	cursor: pointer;
+}
+
+header {
+  background-color: #363636;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: #080808;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 5px;
+  width: 70%;
+  background-color: #f7f2f2;
+  height: 300px; /* only for demonstration, should be removed */
+ color: #111111;
+ text-align: justify;
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+.image1{
+	margin: -40px;
+	padding: 10%;
+}
+image .loveimage{
+	font-family: helvetica;
+	text-align: 50%;
+}
+.linkdown{
+	color: rgb(239, 235, 235);
+}
